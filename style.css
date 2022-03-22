@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+
+* {
+  font-family: "Kavivanar", cursive, serif;
+  margin: 0;
+  padding: 0;
+}
+input,
+button,
+button:active,
+button:focus,
+button:active,
+input:active,
+input:focus,
+input:active {
+  outline: none;
+  border: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background: #fdf3ea;
+}
+
+header {
+  max-width: 860px;
+  padding: 0.25rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #583d72;
+}
+
+.titulo {
+  color: #583d72;
+  font-size: 2.5rem;
+  margin: 1rem 0rem;
+}
+.titulo-main {
+  font-size: 2rem;
+  text-align: center;
+}
+.text-header {
+  font-size: 1.1rem;
+  line-height: 2.25rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.main {
+  max-width: 860px;
+  margin: 3rem auto;
+}
+.adiciona-tarefa {
+  display: flex;
+  font-size: 1.25rem;
+  max-width: 620px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.adiciona-tarefa > * {
+  font-size: 1.2rem;
+}
+#tarefa {
+  font-family: "Arial", Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  color: #583d72;
+  height: 2rem;
+  padding: 0.25rem 00.5rem;
+  border: 2px solid #9f5f80;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.btn-add {
+  background-color: #9f5f80;
+  color: #ffffff;
+  padding: 0 0.25rem;
+  position: relative;
+  left: -3px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+}
+
+/* FORMATACAO DAS LISTA DE TAREFAS */
+.lista-tarefas {
+  max-width: 620px;
+  margin: 1.25rem auto;
+  padding: 0.5rem 2rem;
+}
+.lista-tarefa-container-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #583d72;
+}
+.text-task-item {
+  border-bottom: 1px solid #583d72;
+  margin: 0 0.5rem;
+}
+i.fa-solid {
+  display: inline-block;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+.icon-task {
+  height: 25px;
+}
+.fa-xmark {
+  color: #ff8474;
+}
+.fa-check {
+  color: #583d72;
+}
+@media (min-width: 680px) {
+  .lista-tarefa-container-item {
+    margin-bottom: 2rem;
+  }
+}
+li.concluida {
+  text-decoration: line-through;
+  color: #583d72;
+  opacity: 0.4;
+}

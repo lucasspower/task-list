@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <title>Task List</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo titulo-header">Task Organizer</h1>
+      <p class="text-header">
+        O melhor organizador de tarefas para o dia-a-dia. Gerencie suas tarefas
+        de forma fácil e rápida, para ter um dia mais produtivo e organizado.
+      </p>
+    </header>
+    <main class="main">
+      <h2 class="titulo titulo-main">Lista de Tarefas</h2>
+      <div class="adiciona-tarefa">
+        <input type="text" name="tarefa" id="tarefa" placeholder="tarefa" />
+        <button class="btn-add" type="submit" data-btn-add="">Adicionar</button>
+      </div>
+      <div class="lista-tarefas">
+        <ul class="lista-tarefa-container">
+          <li class="lista-tarefa-container-item">
+            <span class="icon-task remover-tarefa">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+            <p class="text-task-item">Organizar minhas tarefas</p>
+            <span class="icon-task concluir-tarefa">
+              <i class="fa-solid fa-check"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
